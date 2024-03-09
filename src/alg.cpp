@@ -5,17 +5,14 @@
 
 double pown(double value, uint16_t n) {
     double res = 1;
-
     if (n == 0) {
         return 1;
     }
-
     if (n > 0) {
         for (int i = 1; i <= n; i++) {
             res *= value;
         }
     }
-
     return res;
 }
 
@@ -24,14 +21,12 @@ uint64_t fact(uint16_t n) {
     for (int i = n; i >= 1 ; i--) {
         res *= i;
     }
-
     return res;
 }
 
 double calcItem(double x, uint16_t n) {
     double chisl = pown(x, n);
     uint64_t znam = fact(n);
-
     return chisl / znam;
 }
 
