@@ -53,7 +53,7 @@ double cosn(double x, uint16_t count) {
     double result = 1;
     int arg = -1;
     for (int i = 2; i < 2*count; i += 2) {
-        double item = calcItem(x, i ) * arg;
+        double item = calcItem(x, i) * arg;
         arg = -arg;
         result += item;
     }
